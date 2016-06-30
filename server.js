@@ -4,11 +4,10 @@ var port = 3000 || process.env.PORT;
 
 app.use(express.static(__dirname + '/app'));
 
-app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', '*');
-    res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, token');
-    res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
-    next();
+
+app.get('*', (req, res)=>{
+    console.log('New request:', req.url);
+    response.sendFile('index.html', { root: '/app'});
 });
 
 app.listen(port, ()=>{
