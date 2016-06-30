@@ -11,7 +11,7 @@ padding-bottom: 5%;
 
 #text2{
 position: absolute;
-font-size: 12px;
+font-size: .5em;
 color: yellow;
 top: 0;
 bottom: 0;
@@ -21,7 +21,7 @@ bottom: 0;
 /*border: 1px solid grey;*/
 /*position: absolute;*/
 padding: 5%;
-font-size: 8px;
+font-size: 1em;
 color: grey;
 text-align: right;
 
