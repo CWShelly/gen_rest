@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+var port = process.env.port || CONFIG.port;
 
 app.use(express.static(__dirname + '/app'));
 
@@ -10,6 +11,6 @@ app.use((req, res, next) => {
     next();
 });
 
-app.listen(3000, ()=>{
-    console.log('up on 3000');
+app.listen(port, ()=>{
+    console.log('up on ' + port);
 });
