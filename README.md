@@ -1,2 +1,2 @@
 
-A generic restaurant website built with vanilla Javascript, HTML5, and Bootstrap. 
+A generic restaurant website built with JQuery, HTML5, and Bootstrap. 
